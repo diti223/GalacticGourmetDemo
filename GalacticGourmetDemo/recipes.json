@@ -1,0 +1,190 @@
+[{
+ "id": "recipe001",
+ "title": "Vegetable Stir-Fry",
+ "description": "A healthy and delicious vegetable stir-fry with a variety of veggies and a savory sauce.",
+ "ingredients": [
+   {
+     "name": "broccoli",
+     "quantity": "2 cups"
+   },
+   {
+     "name": "carrots",
+     "quantity": "1 cup, sliced"
+   },
+   {
+     "name": "bell pepper",
+     "quantity": "1, sliced"
+   },
+   {
+     "name": "soy sauce",
+     "quantity": "2 tablespoons"
+   },
+   {
+     "name": "rice vinegar",
+     "quantity": "1 tablespoon"
+   }
+ ],
+ "steps": [
+   "Heat oil in a large skillet over medium-high heat.",
+   "Add the broccoli, carrots, and bell pepper. Stir-fry for 5 minutes.",
+   "Add the soy sauce and rice vinegar. Stir to combine.",
+   "Cook for an additional 3-5 minutes, or until the vegetables are tender but still crisp."
+ ],
+ "cookingTime": 20,
+ "category": "dinner",
+ "dietaryRestrictions": [
+   "vegan",
+   "vegetarian"
+ ],
+ "images": [
+   "veggie-stir-fry"
+ ]
+},
+{
+ "id": "recipe002",
+ "title": "Creamy Tomato Soup",
+ "description": "A comforting and rich tomato soup made with fresh tomatoes and a touch of cream.",
+ "ingredients": [
+   {
+     "name": "tomatoes",
+     "quantity": "6, diced"
+   },
+   {
+     "name": "onion",
+     "quantity": "1, diced"
+   },
+   {
+     "name": "garlic",
+     "quantity": "2 cloves, minced"
+   },
+   {
+     "name": "vegetable broth",
+     "quantity": "4 cups"
+   },
+   {
+     "name": "heavy cream",
+     "quantity": "1/2 cup"
+   }
+ ],
+ "steps": [
+   "In a large pot, sauté the onion and garlic in olive oil until softened.",
+   "Add the diced tomatoes and vegetable broth. Bring to a simmer.",
+   "Use an immersion blender to purée the soup until smooth.",
+   "Stir in the heavy cream and season with salt and pepper to taste."
+ ],
+ "cookingTime": 45,
+ "category": "lunch",
+ "dietaryRestrictions": [
+   "vegetarian"
+ ],
+ "images": [
+   "creamy-tomato-soup"
+ ]
+},
+{
+  "id": "recipe003",
+  "title": "Chocolate Chip Cookies",
+  "description": "Classic, chewy chocolate chip cookies that are a crowd-pleaser for any occasion.",
+  "ingredients": [
+    {
+      "name": "all-purpose flour",
+      "quantity": "2 1/4 cups"
+    },
+    {
+      "name": "baking soda",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "name": "salt",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "name": "unsalted butter",
+      "quantity": "1 cup, softened"
+    },
+    {
+      "name": "brown sugar",
+      "quantity": "3/4 cup"
+    },
+    {
+      "name": "white sugar",
+      "quantity": "3/4 cup"
+    },
+    {
+      "name": "eggs",
+      "quantity": "2"
+    },
+    {
+      "name": "vanilla extract",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "name": "semisweet chocolate chips",
+      "quantity": "2 cups"
+    }
+  ],
+  "steps": [
+    "Preheat oven to 375°F (190°C).",
+    "Cream together the butter, brown sugar, and white sugar until smooth.",
+    "Beat in the eggs one at a time, then stir in the vanilla.",
+    "In a separate bowl, combine the flour, baking soda, and salt. Gradually add to the creamed mixture.",
+    "Stir in the chocolate chips.",
+    "Drop rounded spoonfuls of dough onto a baking sheet.",
+    "Bake for 8 to 10 minutes in the preheated oven."
+  ],
+  "cookingTime": 60,
+  "category": "dessert",
+  "dietaryRestrictions": [],
+  "images": [
+    "chocolate-chip-cookies"
+  ]
+},
+{
+  "id": "recipe004",
+  "title": "Grilled Salmon with Lemon Dill Sauce",
+  "description": "Flaky grilled salmon fillets served with a tangy lemon and fresh dill sauce.",
+  "ingredients": [
+    {
+      "name": "salmon fillets",
+      "quantity": "4 (6 oz each)"
+    },
+    {
+      "name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": "1/4 cup"
+    },
+    {
+      "name": "dill",
+      "quantity": "2 tablespoons, chopped"
+    },
+    {
+      "name": "garlic",
+      "quantity": "2 cloves, minced"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "steps": [
+    "Preheat grill to medium-high heat.",
+    "Brush the salmon fillets with olive oil and season with salt and pepper.",
+    "Grill the salmon for 4-5 minutes per side, or until cooked through.",
+    "In a small bowl, whisk together the lemon juice, dill, garlic, and a pinch of salt and pepper.",
+    "Serve the grilled salmon fillets with the lemon dill sauce drizzled over the top."
+  ],
+  "cookingTime": 30,
+  "category": "dinner",
+  "dietaryRestrictions": [
+    "glutenFree",
+    "dairyFree"
+  ],
+  "images": [
+    "grilled-salmon",
+    "lemon-dill-sauce"
+  ]
+}
+]
