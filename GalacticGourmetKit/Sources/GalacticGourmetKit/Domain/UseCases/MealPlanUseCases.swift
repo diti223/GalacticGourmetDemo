@@ -23,6 +23,34 @@ public protocol DeleteMealPlanUseCase {
     func deleteMealPlan(for week: DateRange) async throws
 }
 
+extension UseCaseSender<(week: DateRange, meals: [MealSlot : Recipe])>: CreateMealPlanUseCase {
+    public func createMealPlan(for week: DateRange, with meals: [MealSlot : Recipe]) async throws {
+        try await execute((week, meals))
+    }
+}
+
+extension UseCase<DateRange, MealPlan?>: FetchMealPlanUseCase {
+    public func fetchMealPlan(for week: DateRange) async throws -> MealPlan? {
+        try await execute(week)
+    }
+}
+
+extension UseCaseSender<MealPlan>: UpdateMealPlanUseCase {
+    public func updateMealPlan(_ mealPlan: MealPlan) async throws {
+        try await execute(mealPlan)
+    }
+}
+
+extension UseCaseSender<DateRange>: DeleteMealPlanUseCase {
+    public func deleteMealPlan(for week: DateRange) async throws {
+        try await execute(week)
+    }
+}
+
+
+
+
+
 
 
 //public class MealPlanManager: CreateMealPlanUseCase, FetchMealPlanUseCase, UpdateMealPlanUseCase, DeleteMealPlanUseCase {

@@ -42,19 +42,3 @@ public struct Recipe: Identifiable, Codable {
     }
 }
 
-public enum RecipeCategory: String, CaseIterable, Codable {
-    case breakfast
-    case lunch
-    case dinner
-    case snack
-    case dessert
-}
-
-public enum DietaryRestriction: String, CaseIterable, Codable {
-    case vegetarian
-    case vegan
-    case glutenFree
-    case dairyFree
-    case nutFree
-}
-

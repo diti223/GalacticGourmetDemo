@@ -15,9 +15,6 @@ public protocol FetchRecipeDetailUseCase {
     func fetchRecipeDetail(for recipeId: String) async throws -> RecipeDetail?
 }
 
-public protocol CreateRecipeUseCase {
-    func createRecipe(_ recipe: RecipeCreationModel) async throws
-}
 
 public protocol UpdateRecipeUseCase {
     func updateRecipe(_ recipe: Recipe) async throws
@@ -25,4 +22,16 @@ public protocol UpdateRecipeUseCase {
 
 public protocol DeleteRecipeUseCase {
     func deleteRecipe(withId recipeId: String) async throws
+}
+
+
+
+public protocol CreateRecipeUseCase {
+    func createRecipe(_ recipe: RecipeCreationModel) async throws
+}
+
+extension UseCase<RecipeCreationModel, Void>: CreateRecipeUseCase {
+    public func createRecipe(_ recipe: RecipeCreationModel) async throws {
+        try await execute(recipe)
+    }
 }

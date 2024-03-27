@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Ingredient: Codable {
+public struct Ingredient: Codable, Hashable {
     public var name: String
     public var quantity: String // could be "1 cup", "2 tablespoons", etc.
 

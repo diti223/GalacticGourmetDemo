@@ -9,9 +9,9 @@ import Foundation
 
 public struct MealPlan {
     public var week: DateRange
-    public var meals: [MealSlot: Recipe]
+    public var meals: [MealSlot: [Recipe]]
     
-    public init(week: DateRange, meals: [MealSlot: Recipe]) {
+    public init(week: DateRange, meals: [MealSlot: [Recipe]]) {
         self.week = week
         self.meals = meals
     }
