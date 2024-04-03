@@ -17,7 +17,7 @@ public struct MealPlan {
     }
 }
 
-public struct DateRange {
+public struct DateRange: Hashable {
     public var start: Date
     public var end: Date
     

@@ -57,17 +57,19 @@ struct MealPlanView: View {
                         // Handle adding a new meal or editing the meal plan
                         Task {
                             await viewModel.createMealPlan(
-                                with: [.breakfast: Recipe(
-                                    id: "",
-                                    title: "",
-                                    description: "",
-                                    ingredients: [],
-                                    steps: [],
-                                    cookingTime: 60,
-                                    category: .breakfast,
-                                    dietaryRestrictions: [.dairyFree, .glutenFree],
-                                    images: []
-                                )]
+                                with: [
+                                    .breakfast: [Recipe(
+                                        id: "",
+                                        title: "",
+                                        description: "",
+                                        ingredients: [],
+                                        steps: [],
+                                        cookingTime: 60,
+                                        category: .breakfast,
+                                        dietaryRestrictions: [.dairyFree, .glutenFree],
+                                        images: []
+                                    )]
+                                ]
                             )
                         }
                     }) {

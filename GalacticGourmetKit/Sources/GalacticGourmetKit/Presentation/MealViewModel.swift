@@ -57,9 +57,13 @@ class MealPlanViewModel: ObservableObject {
     }
     
     @MainActor
-    func createMealPlan(with meals: [MealSlot: Recipe]) async {
+    func createMealPlan(with meals: [MealSlot: [Recipe]]) async {
         do {
-            try await createMealPlanUseCase.createMealPlan(for: week, with: meals)
+            let plan = MealPlan(
+                week: week,
+                meals: meals
+            )
+            try await createMealPlanUseCase.createMealPlan(plan)
             await loadMealPlan()
         } catch {
             // Handle errors

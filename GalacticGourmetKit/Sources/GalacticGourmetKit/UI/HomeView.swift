@@ -45,25 +45,26 @@ public struct HomeView: View {
         
         return nextWeekRange
     }
+    
     public var body: some View {
         TabView {
             RecipeListView(
                 viewModel: RecipeListViewModel(fetchRecipesUseCase: fetchRecipesUseCase)
             )
-                .tabItem {
-                    Label("Discover", systemImage: "magnifyingglass")
-                }
+            .tabItem {
+                Label("Discover", systemImage: "magnifyingglass")
+            }
             
             RecipeCreationView(
                 viewModel: RecipeCreationViewModel(createRecipeUseCase: UseCase { model in
                     debugPrint(model)
                 })
             )
-                .tabItem {
-                    Label("Create", systemImage: "plus.circle")
-                }
+            .tabItem {
+                Label("Create", systemImage: "plus.circle")
+            }
             
-//            MealPlanningView()
+            //            MealPlanningView()
             MealPlanView(
                 viewModel: MealPlanViewModel(
                     week: mealPlanRange,
